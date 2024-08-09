@@ -1,0 +1,117 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\TeamMidia\ari\logo.jpg" />
+    <None Include="wwwroot\TeamMidia\ari\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\ari\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\atl\logo.jpg" />
+    <None Include="wwwroot\TeamMidia\atl\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\atl\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\bal\logo.png" />
+    <None Include="wwwroot\TeamMidia\bal\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\bal\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\buf\logo.jpg" />
+    <None Include="wwwroot\TeamMidia\buf\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\buf\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\car\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\car\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\car\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\chi\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\chi\settingPlan.png" />
+    <None Include="wwwroot\TeamMidia\chi\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\cin\logo.png" />
+    <None Include="wwwroot\TeamMidia\cin\settingPlan.jpg" />
+    <None Include="wwwroot\TeamMidia\cin\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\cle\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\cle\settingPlan.jpg" />
+    <None Include="wwwroot\TeamMidia\cle\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\dal\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\dal\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\dal\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\den\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\den\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\den\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\det\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\det\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\det\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\gb\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\gb\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\gb\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\hou\logo.jpg" />
+    <None Include="wwwroot\TeamMidia\hou\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\hou\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\ind\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\ind\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\ind\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\jax\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\jax\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\jax\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\kc\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\kc\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\kc\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\lar\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\lar\settingPlan.png" />
+    <None Include="wwwroot\TeamMidia\lar\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\mia\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\mia\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\mia\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\min\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\min\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\min\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\ne\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\ne\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\ne\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\no\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\no\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\no\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\nyg\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\nyg\settingPlan.jpg" />
+    <None Include="wwwroot\TeamMidia\nyg\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\nyj\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\nyj\settingPlan.jpg" />
+    <None Include="wwwroot\TeamMidia\nyj\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\oak\logo.jpg" />
+    <None Include="wwwroot\TeamMidia\oak\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\oak\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\phi\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\phi\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\phi\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\pit\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\pit\settingPlan.png" />
+    <None Include="wwwroot\TeamMidia\pit\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\sd\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\sd\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\sd\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\sea\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\sea\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\sea\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\sf\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\sf\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\sf\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\tb\logo.jpg" />
+    <None Include="wwwroot\TeamMidia\tb\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\tb\stadium.jpg" />
+    <None Include="wwwroot\TeamMidia\ten\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\ten\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\ten\stadium.jpeg" />
+    <None Include="wwwroot\TeamMidia\wsh\logo.jpeg" />
+    <None Include="wwwroot\TeamMidia\wsh\settingPlan.jpeg" />
+    <None Include="wwwroot\TeamMidia\wsh\stadium.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+  </ItemGroup>
+
+</Project>

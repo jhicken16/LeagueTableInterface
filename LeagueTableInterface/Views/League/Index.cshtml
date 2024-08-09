@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<League.Models.League>
+
+<div>
+@foreach (var league in Model)
+{
+    <h1>@league.LeagueId</h1>
+    <h1>@league.Name</h1>
+    <br />
+}
+</div>

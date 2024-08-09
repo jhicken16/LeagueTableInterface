@@ -1,0 +1,78 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["title"] = "Teams";
+    ViewData["style"] = "~/css/TeamsIndex.css";
+    ViewData["script"] = "~/js/TeamsIndex.js";
+}
+
+@model List<League.Models.Team>
+
+<div class="text-left">
+    <b>User Name:</b> @HttpContextAccessor?.HttpContext?.Request.Cookies["favTeam"]
+    <br />
+</div>
+
+<h1>Teams</h1>
+<lablel for="favTeam">Pick Favorite</lablel>
+<form id="favTeam" action="/" method="POST">
+    <select name="favTeam" id="teamDropDown">
+        <option value="">Select Favorite</option>
+        @foreach (var team in Model)
+        {
+            <option value=@team.TeamId>@team.Name</option>
+        }
+    </select>
+    <input type="submit" value="Submit">
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Location</th>
+            <th>Name</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Tie</th>
+            <th>Points For</th>
+            <th>Points Against</th>
+            <th>Stadium</th>
+            <th>Capacity</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var team in Model)
+        {
+            
+                <tr class="tableRow" id="@team.TeamId">
+                    <td>@team.Location</td>
+                    <td>@team.Name</td>
+                    <td>@team.Win</td>
+                    <td>@team.Loss</td>
+                    <td>@team.Tie</td>
+                    <td>@team.PointsFor</td>
+                    <td>@team.PointsAgainst</td>
+                    <td>@team.Stadium</td>
+                    <td>@team.Capacity</td>
+                    <td>@team.Address</td>
+                    <td>@team.City</td>
+                    <td>@team.State</td>
+                    <td>@team.Zip</td>
+                    <td>@team.Latitude</td>
+                    <td>@team.Longitude</td>
+                    <td><a asp-area="" asp-controller="Teams" asp-action="TeamInfo" asp-route-id="@team.TeamId">Team</a></td>
+                </tr>
+            
+
+        }
+    </tbody>
+</table>

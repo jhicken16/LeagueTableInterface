@@ -1,0 +1,76 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["title"] = "Player";
+    //ViewData["style"] = "";
+}
+@model League.Models.PlayerUtility
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-6">
+
+            <h1>@Model.player.Name</h1>
+
+            <table class="table table-striped table-bordered">
+                <
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Position</th>
+                        <th>Rank</th>
+                        <th>Rating</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tableRow">
+                        <td>@Model.player.Number</td>
+                        <td>@Model.player.Position</td>
+                        <td>@Model.player.Rank</td>
+                        <td>@Model.player.Rating</td>
+                        <td>@Model.player.State</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <!--  --   Right side of screen  --  -->
+        <div class="col-6">
+            <img src="@Url.Content(Model.FileNames[0])" class="img-fluid" />
+        </div>
+
+        <div class="container">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Experience</th>
+                        <th>Draft Year</th>
+                        <th>Draft Round</th>
+                        <th>Draft Pick</th>
+                        <th>College</th>
+                        <th>Height</th>
+                        <th>Weight</th>
+                        <th>Age</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tableRow">
+                        <td>@Model.player.Experience</td>
+                        <td>@Model.player.DraftYear</td>
+                        <td>@Model.player.DraftRound</td>
+                        <td>@Model.player.DraftPick</td>
+                        <td>@Model.player.College</td>
+                        <td>@Model.player.Height</td>
+                        <td>@Model.player.Weight</td>
+                        <td>@Model.player.Age</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

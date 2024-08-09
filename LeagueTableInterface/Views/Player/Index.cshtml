@@ -1,0 +1,120 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["style"] = "~/css/TeamsIndex.css";
+}
+@model League.Models.PlayersUtility
+
+<label for="pickOrder">Order By</label>
+<form id="pickOrder" action="/Players" method="get">
+    <select name="orderOption">
+        <option value="">Please Select Order</option>
+        <option value="Number">Number</option>
+        <option value="Height">Height</option>
+        <option value="Weight">Weight</option>
+        <option value="Age">Age</option>
+        <option value="DraftYear">Draft Year</option>
+        <option value="DraftRound">Draft Round</option>
+        <option value="DraftPick">Draft Pick</option>
+        <option value="Rank">Rank</option>
+        <option value="Rating">Ration</option>
+        <option value="Depth">Depth</option>
+    </select> 
+    <input type="submit" value="Submit" />
+</form>
+
+<label for="seachPlayers">Search For Player</label>
+<form id="searchPlayers" action="/Players" method="get">
+    <input type="text" name="playerName" />
+    <input type="submit" value="Submit" />
+</form>
+
+<label for="PlayerPosition">Sort By Player Position</label>
+<form id="playerPosition" action="/Players" method="get">
+    <select name="position">
+        <option value="">Please select</option>
+        @foreach(var p in Model.Positions)
+        {
+            <option value="@p">@p</option>
+        }
+    </select> 
+    <input type="submit" value="Submit" />
+</form>
+
+<div class="flex-row bottom-margin">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Player Id</th>
+                <th>Team Id</th>
+                <th>Number</th>
+                <th>Position</th>
+                <th>Name</th>
+                <th>Height</th>
+                <th>Weight</th>
+                <th>Age</th>
+                <th>Birth Date</th>
+                <th>Experience</th>
+                <th>Draft Year</th>
+                <th>Draft Round</th>
+                <th>Draft Pick</th>
+                <th>College</th>
+                <th>Rank</th>
+                <th>Rating</th>
+                <th>Depth</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var player in Model.Players)
+            {
+                if(Context.Request.Cookies["favTeam"] == player.TeamId)
+                {
+                    <tr class="tableRow addFavoriteStyle">
+                        <td>@player.PlayerId</td>
+                        <td>@player.TeamId</td>
+                        <td>@player.Number</td>
+                        <td>@player.Position</td>
+                        <td>@player.Name</td>
+                        <td>@player.Height</td>
+                        <td>@player.Weight</td>
+                        <td>@player.Age</td>
+                        <td>@player.BirthDate</td>
+                        <td>@player.Experience</td>
+                        <td>@player.DraftYear</td>
+                        <td>@player.DraftRound</td>
+                        <td>@player.DraftPick</td>
+                        <td>@player.College</td>
+                        <td>@player.Rank</td>
+                        <td>@player.Rating</td>
+                        <td>@player.Depth</td>
+                        <td><a asp-controller="Player" asp-action="Player" asp-route-id="@player.PlayerId">Player Details</a></td>
+                    </tr>
+                }
+                else{
+                    <tr class="tableRow">
+                        <td>@player.PlayerId</td>
+                        <td>@player.TeamId</td>
+                        <td>@player.Number</td>
+                        <td>@player.Position</td>
+                        <td>@player.Name</td>
+                        <td>@player.Height</td>
+                        <td>@player.Weight</td>
+                        <td>@player.Age</td>
+                        <td>@player.BirthDate</td>
+                        <td>@player.Experience</td>
+                        <td>@player.DraftYear</td>
+                        <td>@player.DraftRound</td>
+                        <td>@player.DraftPick</td>
+                        <td>@player.College</td>
+                        <td>@player.Rank</td>
+                        <td>@player.Rating</td>
+                        <td>@player.Depth</td>
+                        <td><a asp-controller="Player" asp-action="Player" asp-route-id="@player.PlayerId">Player Details</a></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

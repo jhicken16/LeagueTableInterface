@@ -1,0 +1,15 @@
+﻿.title {
+    text-decoration: underline;
+}
+.verticle-container{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+.bottom-margin {
+    margin-bottom: 6em;
+}
+
